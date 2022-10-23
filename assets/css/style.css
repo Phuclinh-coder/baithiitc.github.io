@@ -119,12 +119,7 @@ html{
     display: flex;
     justify-content: center;
     z-index: 3;
-    box-shadow: 
-        -0px 9px 15px rgba(59, 58, 58, 0.53),
-        10px -19px 15px rgba(89, 87, 87, 0.038),
-        inset 4px -4px 4px rgba(0,0,0,0.53),
-        inset -5px 5px 12px #fff
-    ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 /* Mini list */
 
@@ -138,9 +133,10 @@ html{
     
     position: absolute;
     top: 100%;
-    left: -14px;
+    left: 0;
+    right: 0;
     width: 160px;
-    background-color: #000;
+    background-color: rgba(72, 5, 40, 0.8);
     padding: 0;
     display: none;
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
@@ -150,7 +146,7 @@ html{
     color: #fff;
     display: block;
     padding: 8px 12px;
-    text-align: center;
+    
 }
 .header-wraper .nav .subnav .subnavcon  li:hover a{
     color: red;
@@ -184,7 +180,7 @@ html{
     justify-content: space-evenly;
 }
 .nav > .subnav {
-    padding-left: 20px;
+    padding: 0 10px;
 }
 .a-style{
     color: #7d7d7d;
@@ -382,17 +378,35 @@ html{
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #f2f2f2;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
 }
+
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
 .clb-team{
     position: relative;  
-    display: flex;
-    align-items: center;
+    padding: 10px 0;
+}
+.clb-team .general-title{
+    padding: 30px 0;
 }
 
 .team-content{
     display: flex;
     flex: 1;
+    margin-bottom: 30px;
 }
 
 .swiper{
@@ -418,7 +432,7 @@ html{
   position: absolute;
   height: 40%;
   width: 100%;
-  background: #7d2ae8;
+  background: blue;
   border-radius: 20px 20px 0 0;
 }
 
@@ -493,7 +507,7 @@ html{
 }
 
 .team-card .team-card-button button{
-  background: #7d2ae8;
+  background: blue;
   outline: none;
   border: none;
   color: #fff;
@@ -782,6 +796,7 @@ html{
 .active-itc{
     width: 100%;
     height: 700px;
+    
 }
 .main-active{
     height: 100%;
@@ -797,11 +812,7 @@ html{
     gap: 0px 20px;
 }
 .active-item {
-    box-shadow: 
-    -2px 2px 5.5px rgb(0 0 0 / 53%),
-    -1px -1px 37.5px rgb(255 255 255 / 4%),
-    inset 1px -1px 0px rgb(0 0 0 / 53%),
-    inset -5px 5px 12px #fff;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
     border-radius: 15px 15px 15px 15px;
 }
 .item-1 .top-active{
@@ -1010,7 +1021,43 @@ html{
     color: red;
 }
 
+/* BOOK */
+.book{
+    background-color: #f0f0f0;
+}
 
+.list-book .general-title{
+    padding: 30px 0;
+    color: #000;
+}
+
+.book .list-book  img{
+    width: 1200px;
+}
+.book .book-item{
+    display: flex;
+    width: 1200px;
+}
+.book .book-item .item-book{
+    width: 25%;
+    
+    
+}
+.book-item .item-book img{
+    height: 230px;
+    width: 200px;
+}
+
+.book-nen{
+    position: relative;
+    margin-top: 240px;
+}
+.book-item{
+    position: absolute;
+
+    top: -185PX;
+    right: -51px;
+}
 
 
 
